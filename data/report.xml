@@ -1,677 +1,830 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><BuildCompletedEvent xmlns="http://schemas.microsoft.com/TeamFoundation/2010/Build" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Build Uri="vstfs:///Build/Build/1993" TeamProject="Открытие" BuildNumber="20160524.2" BuildDefinitionUri="vstfs:///Build/Definition/18" StartTime="2016-05-24T15:22:42.3568257Z" FinishTime="2016-05-24T15:23:39.8751318Z" Status="PartiallySucceeded" CompilationStatus="Unknown" TestStatus="Unknown" BuildControllerUri="vstfs:///Build/Controller/4" SourceGetVersion="LG:refs/heads/tfs_reporting:f70726e433e97cdd6f0b1d3bb5efc88196b6673f" LastChangedOn="2016-05-24T15:23:39.95Z" LastChangedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts" LastChangedByDisplayName="[DefaultCollection]\Project Collection Service Accounts" KeepForever="false" IsDeleted="false">
-    <ProcessParameters>{&quot;BuildConfiguration&quot;:&quot;debug&quot;,&quot;BuildPlatform&quot;:&quot;any cpu&quot;}</ProcessParameters>
-    <LastChangeByTFID>00000000-0000-0000-0000-000000000000</LastChangeByTFID>
-    <QueueIds />
-    <Information>
-      <BuildInformationNode NodeId="2" ParentId="1" type="ConfigurationSummary" LastModifiedDate="0001-01-01T00:00:00">
-        <Fields>
-          <InformationField name="Platform" value="Build" />
-          <InformationField name="Flavor" value="" />
-          <InformationField name="TotalCompilationErrors" value="1" />
-          <InformationField name="TotalCompilationWarnings" value="61" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="3" ParentId="1" type="BuildProject" LastModifiedDate="0001-01-01T00:00:00">
-        <Fields>
-          <InformationField name="ServerPath" value="Build" />
-          <InformationField name="CompilationErrors" value="1" />
-          <InformationField name="CompilationWarnings" value="61" />
-          <InformationField name="Platform" value="Build" />
-          <InformationField name="Flavor" value="" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="4" ParentId="3" type="BuildError" LastModifiedDate="0001-01-01T00:00:00">
-        <Fields>
-          <InformationField name="Message" value="VSTest Test Run failed with exit code: 1" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="5" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="added tfs reporting tests" />
-          <InformationField name="CommitId" value="f70726e433e97cdd6f0b1d3bb5efc88196b6673f" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-24T15:14:20.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/f70726e433e97cdd6f0b1d3bb5efc88196b6673f" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="6" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Удален проект SOZToolkit" />
-          <InformationField name="CommitId" value="d050e7f5ae0dc44aaab2ab73682ac073604e5f0e" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-18T05:55:29.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/d050e7f5ae0dc44aaab2ab73682ac073604e5f0e" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="7" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Добавлена функция клонирования" />
-          <InformationField name="CommitId" value="8c7505f5fceb0723d4fbd0a0d477f625b0d236b0" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-18T05:50:49.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/8c7505f5fceb0723d4fbd0a0d477f625b0d236b0" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="8" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="deploy descriptors" />
-          <InformationField name="CommitId" value="65c8952651ffeac69a51f1ab2baa5a5aa1b0c109" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-17T14:42:21.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/65c8952651ffeac69a51f1ab2baa5a5aa1b0c109" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="9" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="project json fixed" />
-          <InformationField name="CommitId" value="c40af067e982b199a8d4c907ae271a4c90cd1166" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-17T14:41:15.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c40af067e982b199a8d4c907ae271a4c90cd1166" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="10" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
-          <InformationField name="CommitId" value="c4203898cb3b2efe006dd4da5e58e295af258557" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-17T13:50:47.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c4203898cb3b2efe006dd4da5e58e295af258557" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="11" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Now - parameters produce transactions, transactions are sources for xml" />
-          <InformationField name="CommitId" value="1a33942298208cdfe22c39cd2cd96fc8f3bb2e42" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-17T13:50:45.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/1a33942298208cdfe22c39cd2cd96fc8f3bb2e42" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="12" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Добавлена библиотека" />
-          <InformationField name="CommitId" value="559b056b17653352a6d6087737462bb20a9fe272" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-17T09:33:16.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/559b056b17653352a6d6087737462bb20a9fe272" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="13" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA
+﻿<BuildCompletedEvent xmlns="http://schemas.microsoft.com/TeamFoundation/2010/Build" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Build Uri="vstfs:///Build/Build/2157" TeamProject="Открытие" BuildNumber="20160526.4" BuildDefinitionUri="vstfs:///Build/Definition/18" StartTime="2016-05-26T13:47:00.2146771Z" FinishTime="2016-05-26T13:48:45.4543009Z" Status="PartiallySucceeded" CompilationStatus="Unknown" TestStatus="Unknown" BuildControllerUri="vstfs:///Build/Controller/4" SourceGetVersion="LG:refs/heads/tfs_reporting:15083adc5a20181afa76caac8504dd39beec3036" LastChangedOn="2016-05-26T13:48:45.487Z" LastChangedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts" LastChangedByDisplayName="[DefaultCollection]\Project Collection Service Accounts" KeepForever="false" IsDeleted="false">
+          <ProcessParameters>{&quot;BuildConfiguration&quot;:&quot;debug&quot;,&quot;BuildPlatform&quot;:&quot;any cpu&quot;}</ProcessParameters>
+          <LastChangeByTFID>00000000-0000-0000-0000-000000000000</LastChangeByTFID>
+          <QueueIds />
+          <Information>
+            <BuildInformationNode NodeId="2" ParentId="1" type="ConfigurationSummary" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="Platform" value="Build" />
+                <InformationField name="Flavor" value="" />
+                <InformationField name="TotalCompilationErrors" value="8" />
+                <InformationField name="TotalCompilationWarnings" value="61" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="3" ParentId="1" type="BuildProject" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="ServerPath" value="Build" />
+                <InformationField name="CompilationErrors" value="8" />
+                <InformationField name="CompilationWarnings" value="61" />
+                <InformationField name="Platform" value="Build" />
+                <InformationField name="Flavor" value="" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="4" ParentId="3" type="BuildError" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="Message" value="run=TestRun4;outcome=Failed;total=6;executed=6;passed=4;failed=2;error=0;timeout=0;aborted=0;inconclusive=0;passedButRunAborted=0;notRunnable=0;notExecuted=0;disconnected=0;warning=0;completed=0;inProgress=0;pending=0" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="5" ParentId="3" type="BuildError" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="Message" value="VSTest Test Run failed with exit code: 1" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="6" ParentId="3" type="BuildError" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="Message" value="VSTest Test Run failed with exit code: 1" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="7" ParentId="3" type="BuildError" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="Message" value="VSTest Test Run failed with exit code: 1" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="8" ParentId="3" type="BuildError" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="Message" value="run=TestRun3;outcome=Failed;total=6;executed=6;passed=4;failed=2;error=0;timeout=0;aborted=0;inconclusive=0;passedButRunAborted=0;notRunnable=0;notExecuted=0;disconnected=0;warning=0;completed=0;inProgress=0;pending=0" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="9" ParentId="3" type="BuildError" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="Message" value="run=TestRun1;outcome=Failed;total=6;executed=6;passed=5;failed=1;error=0;timeout=0;aborted=0;inconclusive=0;passedButRunAborted=0;notRunnable=0;notExecuted=0;disconnected=0;warning=0;completed=0;inProgress=0;pending=0" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="10" ParentId="3" type="BuildError" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="Message" value="VSTest Test Run failed with exit code: 1" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="11" ParentId="3" type="BuildError" LastModifiedDate="0001-01-01T00:00:00">
+              <Fields>
+                <InformationField name="Message" value="run=TestRun2;outcome=Failed;total=6;executed=6;passed=4;failed=2;error=0;timeout=0;aborted=0;inconclusive=0;passedButRunAborted=0;notRunnable=0;notExecuted=0;disconnected=0;warning=0;completed=0;inProgress=0;pending=0" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="12" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="testreport task" />
+                <InformationField name="CommitId" value="15083adc5a20181afa76caac8504dd39beec3036" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-26T13:37:42.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/15083adc5a20181afa76caac8504dd39beec3036" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="13" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="fail probability change" />
+                <InformationField name="CommitId" value="d968a47366aa5bdb4eab8bbd3ab19b8515431211" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-26T11:30:25.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/d968a47366aa5bdb4eab8bbd3ab19b8515431211" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="14" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="added fake tfs report tests" />
+                <InformationField name="CommitId" value="2a73ae3c6967d3578a80ef349c173a2aa8eb284a" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-26T11:13:33.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/2a73ae3c6967d3578a80ef349c173a2aa8eb284a" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="15" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="showenv changed" />
+                <InformationField name="CommitId" value="80c6cb59f78be778c057f7233f435144442fb146" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-25T15:07:45.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/80c6cb59f78be778c057f7233f435144442fb146" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="16" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' into tfs_reporting" />
+                <InformationField name="CommitId" value="9775e9c345becc9eb9ab1752a372db78e83a2b6d" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-25T14:51:24.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/9775e9c345becc9eb9ab1752a372db78e83a2b6d" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="17" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="show env script for tfs logging 2" />
+                <InformationField name="CommitId" value="2d940cd3d372631fbda5be6ff2cd0fc811469c5e" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-25T14:49:36.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/2d940cd3d372631fbda5be6ff2cd0fc811469c5e" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="18" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="show env script for tfs logging" />
+                <InformationField name="CommitId" value="e5595b07e408d8466070569db4f605b22060728e" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-25T14:41:52.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e5595b07e408d8466070569db4f605b22060728e" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="19" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="В функции перемещения реализовано определение статуса. И добавлены сущности для entity framework" />
+                <InformationField name="CommitId" value="5080c1c7a436b9004e7982497694a88522857ece" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-25T07:25:25.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/5080c1c7a436b9004e7982497694a88522857ece" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="20" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="failed message changed" />
+                <InformationField name="CommitId" value="da3a0b2f05d3cf916293dc1ab40c849008d32db1" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-24T15:20:44.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/da3a0b2f05d3cf916293dc1ab40c849008d32db1" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="21" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="added tfs reporting tests" />
+                <InformationField name="CommitId" value="f70726e433e97cdd6f0b1d3bb5efc88196b6673f" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-24T15:14:20.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/f70726e433e97cdd6f0b1d3bb5efc88196b6673f" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="22" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA" />
+                <InformationField name="CommitId" value="37f4829d7197c765b3305eea8a00d2173f3b58b5" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-24T09:54:09.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/37f4829d7197c765b3305eea8a00d2173f3b58b5" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="23" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлена функция продвижения заявки по этапам" />
+                <InformationField name="CommitId" value="2a734a0aa6c2bbaaedb7af3e643a13bf16daabd4" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-24T09:53:51.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/2a734a0aa6c2bbaaedb7af3e643a13bf16daabd4" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="24" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Test 27 was repaired. A problem may occur when forms not fie screen. Some little fixes." />
+                <InformationField name="CommitId" value="70bc7d52a6d11b01da1fab9d7a3e4d3808bdf19b" />
+                <InformationField name="Author" value="Stanislav Vlasko" />
+                <InformationField name="Timestamp" value="2016-05-23T14:07:18.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/70bc7d52a6d11b01da1fab9d7a3e4d3808bdf19b" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="25" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлено логирование операции генерации заявки" />
+                <InformationField name="CommitId" value="48df6da2c6b1cc2f20cb79f1c5fe5b61256a286d" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-23T13:17:53.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/48df6da2c6b1cc2f20cb79f1c5fe5b61256a286d" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="26" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Удален проект SOZToolkit" />
+                <InformationField name="CommitId" value="d050e7f5ae0dc44aaab2ab73682ac073604e5f0e" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-18T05:55:29.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/d050e7f5ae0dc44aaab2ab73682ac073604e5f0e" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="27" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлена функция клонирования" />
+                <InformationField name="CommitId" value="8c7505f5fceb0723d4fbd0a0d477f625b0d236b0" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-18T05:50:49.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/8c7505f5fceb0723d4fbd0a0d477f625b0d236b0" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="28" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="deploy descriptors" />
+                <InformationField name="CommitId" value="65c8952651ffeac69a51f1ab2baa5a5aa1b0c109" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-17T14:42:21.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/65c8952651ffeac69a51f1ab2baa5a5aa1b0c109" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="29" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="project json fixed" />
+                <InformationField name="CommitId" value="c40af067e982b199a8d4c907ae271a4c90cd1166" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-17T14:41:15.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c40af067e982b199a8d4c907ae271a4c90cd1166" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="30" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
+                <InformationField name="CommitId" value="c4203898cb3b2efe006dd4da5e58e295af258557" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-17T13:50:47.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c4203898cb3b2efe006dd4da5e58e295af258557" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="31" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Now - parameters produce transactions, transactions are sources for xml" />
+                <InformationField name="CommitId" value="1a33942298208cdfe22c39cd2cd96fc8f3bb2e42" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-17T13:50:45.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/1a33942298208cdfe22c39cd2cd96fc8f3bb2e42" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="32" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлена библиотека" />
+                <InformationField name="CommitId" value="559b056b17653352a6d6087737462bb20a9fe272" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-17T09:33:16.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/559b056b17653352a6d6087737462bb20a9fe272" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="33" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA
 
 # Conflicts:
 # cardServ" />
-          <InformationField name="CommitId" value="03f2dda10c3f31d257ca06cbcc352a3a1e8f338d" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-17T09:32:07.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/03f2dda10c3f31d257ca06cbcc352a3a1e8f338d" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="14" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Добавлена функциональность по генерации заявок СОЗа" />
-          <InformationField name="CommitId" value="6ae950aa45bfed7ee6c2fc20648ed18fff1ffe85" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-17T09:28:08.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/6ae950aa45bfed7ee6c2fc20648ed18fff1ffe85" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="15" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
-          <InformationField name="CommitId" value="058e57c6a527f9590faa1840acab183f578c4c88" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-17T07:56:17.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/058e57c6a527f9590faa1840acab183f578c4c88" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="16" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="CardServices - countries, expression" />
-          <InformationField name="CommitId" value="de63e9efdfe58ef80b1c99db0533f4f5e9c16875" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-17T07:56:13.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/de63e9efdfe58ef80b1c99db0533f4f5e9c16875" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="17" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'auto_cleaner'" />
-          <InformationField name="CommitId" value="b17b3ea414983ed9c68ef1ac88c6dfbc6ad6abb7" />
-          <InformationField name="Author" value="Stanislav Vlasko" />
-          <InformationField name="Timestamp" value="2016-05-17T06:25:46.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/b17b3ea414983ed9c68ef1ac88c6dfbc6ad6abb7" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="18" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="fixed bug with deleting rows without copying it. Exceptions were added." />
-          <InformationField name="CommitId" value="dc11ebe6cb8e787e21971c22ba16490548c49a57" />
-          <InformationField name="Author" value="Stanislav Vlasko" />
-          <InformationField name="Timestamp" value="2016-05-17T06:22:41.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/dc11ebe6cb8e787e21971c22ba16490548c49a57" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="19" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="AutoCleaner init commit." />
-          <InformationField name="CommitId" value="a31693dc90888f76e02e63540c6eae2b6323957f" />
-          <InformationField name="Author" value="Stanislav Vlasko" />
-          <InformationField name="Timestamp" value="2016-05-17T05:54:25.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a31693dc90888f76e02e63540c6eae2b6323957f" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="20" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="EndTest method fixed" />
-          <InformationField name="CommitId" value="0455c6db5647a97a5ef6d5309b756c291b8714cf" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-16T14:21:08.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0455c6db5647a97a5ef6d5309b756c291b8714cf" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="21" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="CloseBrowser, null assignment moved to the end of the method" />
-          <InformationField name="CommitId" value="128bee720202a89f33045f5d51b80584b9f48bda" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-16T13:59:32.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/128bee720202a89f33045f5d51b80584b9f48bda" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="22" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="WebDriver logs added" />
-          <InformationField name="CommitId" value="a265b3cb7ec1edbff80076170d9c6fa0dc769cf2" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-16T13:34:26.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a265b3cb7ec1edbff80076170d9c6fa0dc769cf2" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="23" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="nlog config added" />
-          <InformationField name="CommitId" value="7b9c61ed3a99e4e6405d7c12704185d32181d436" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-16T13:23:54.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/7b9c61ed3a99e4e6405d7c12704185d32181d436" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="24" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
-          <InformationField name="CommitId" value="090ede8e49872c7d38ee3dea1bc6c32860c542e2" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-16T12:41:40.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/090ede8e49872c7d38ee3dea1bc6c32860c542e2" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="25" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="downloadDeps - qaAutomation password changed" />
-          <InformationField name="CommitId" value="23b8073f11bfbc70ab04c8a32fbf22b51de4a5dd" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-16T12:41:29.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/23b8073f11bfbc70ab04c8a32fbf22b51de4a5dd" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="26" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA
+                <InformationField name="CommitId" value="03f2dda10c3f31d257ca06cbcc352a3a1e8f338d" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-17T09:32:07.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/03f2dda10c3f31d257ca06cbcc352a3a1e8f338d" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="34" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлена функциональность по генерации заявок СОЗа" />
+                <InformationField name="CommitId" value="6ae950aa45bfed7ee6c2fc20648ed18fff1ffe85" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-17T09:28:08.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/6ae950aa45bfed7ee6c2fc20648ed18fff1ffe85" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="35" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
+                <InformationField name="CommitId" value="058e57c6a527f9590faa1840acab183f578c4c88" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-17T07:56:17.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/058e57c6a527f9590faa1840acab183f578c4c88" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="36" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="CardServices - countries, expression" />
+                <InformationField name="CommitId" value="de63e9efdfe58ef80b1c99db0533f4f5e9c16875" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-17T07:56:13.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/de63e9efdfe58ef80b1c99db0533f4f5e9c16875" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="37" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'auto_cleaner'" />
+                <InformationField name="CommitId" value="b17b3ea414983ed9c68ef1ac88c6dfbc6ad6abb7" />
+                <InformationField name="Author" value="Stanislav Vlasko" />
+                <InformationField name="Timestamp" value="2016-05-17T06:25:46.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/b17b3ea414983ed9c68ef1ac88c6dfbc6ad6abb7" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="38" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="fixed bug with deleting rows without copying it. Exceptions were added." />
+                <InformationField name="CommitId" value="dc11ebe6cb8e787e21971c22ba16490548c49a57" />
+                <InformationField name="Author" value="Stanislav Vlasko" />
+                <InformationField name="Timestamp" value="2016-05-17T06:22:41.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/dc11ebe6cb8e787e21971c22ba16490548c49a57" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="39" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="AutoCleaner init commit." />
+                <InformationField name="CommitId" value="a31693dc90888f76e02e63540c6eae2b6323957f" />
+                <InformationField name="Author" value="Stanislav Vlasko" />
+                <InformationField name="Timestamp" value="2016-05-17T05:54:25.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a31693dc90888f76e02e63540c6eae2b6323957f" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="40" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="EndTest method fixed" />
+                <InformationField name="CommitId" value="0455c6db5647a97a5ef6d5309b756c291b8714cf" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-16T14:21:08.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0455c6db5647a97a5ef6d5309b756c291b8714cf" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="41" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="CloseBrowser, null assignment moved to the end of the method" />
+                <InformationField name="CommitId" value="128bee720202a89f33045f5d51b80584b9f48bda" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-16T13:59:32.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/128bee720202a89f33045f5d51b80584b9f48bda" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="42" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="WebDriver logs added" />
+                <InformationField name="CommitId" value="a265b3cb7ec1edbff80076170d9c6fa0dc769cf2" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-16T13:34:26.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a265b3cb7ec1edbff80076170d9c6fa0dc769cf2" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="43" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="nlog config added" />
+                <InformationField name="CommitId" value="7b9c61ed3a99e4e6405d7c12704185d32181d436" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-16T13:23:54.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/7b9c61ed3a99e4e6405d7c12704185d32181d436" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="44" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
+                <InformationField name="CommitId" value="090ede8e49872c7d38ee3dea1bc6c32860c542e2" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-16T12:41:40.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/090ede8e49872c7d38ee3dea1bc6c32860c542e2" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="45" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="downloadDeps - qaAutomation password changed" />
+                <InformationField name="CommitId" value="23b8073f11bfbc70ab04c8a32fbf22b51de4a5dd" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-16T12:41:29.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/23b8073f11bfbc70ab04c8a32fbf22b51de4a5dd" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="46" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA
 
 # Conflicts:
 # Dynamics" />
-          <InformationField name="CommitId" value="c6f01f6b694f1473e79b6be613fe18fe3e4c0253" />
-          <InformationField name="Author" value="Alexandr Rogov" />
-          <InformationField name="Timestamp" value="2016-05-16T07:44:47.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c6f01f6b694f1473e79b6be613fe18fe3e4c0253" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="27" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Изменение тестовых контуров. Доработки дополнительных проверок." />
-          <InformationField name="CommitId" value="9fccdb557cee244ddc558ba3829403504ed352d2" />
-          <InformationField name="Author" value="Alexandr Rogov" />
-          <InformationField name="Timestamp" value="2016-05-16T07:03:15.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/9fccdb557cee244ddc558ba3829403504ed352d2" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="28" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="submodule removed" />
-          <InformationField name="CommitId" value="68d7a306edad5b84553ee9ca6164601cdfe020db" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-13T13:21:31.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/68d7a306edad5b84553ee9ca6164601cdfe020db" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="29" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="added submodule for unit testing" />
-          <InformationField name="CommitId" value="e2220e82f4f5df3a8b13ff321601bf07b4b69e09" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-13T11:57:44.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e2220e82f4f5df3a8b13ff321601bf07b4b69e09" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="30" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Extended logging via nlog was added. Code was refactored." />
-          <InformationField name="CommitId" value="645c41af565dcae813c36241da0f216a93a8e2ab" />
-          <InformationField name="Author" value="Stanislav Vlasko" />
-          <InformationField name="Timestamp" value="2016-05-13T11:00:10.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/645c41af565dcae813c36241da0f216a93a8e2ab" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="31" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="utulities package solution added" />
-          <InformationField name="CommitId" value="0027ae73636dc4012630434ce08c875bdb4c9bae" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-12T08:05:33.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0027ae73636dc4012630434ce08c875bdb4c9bae" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="32" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
-          <InformationField name="CommitId" value="b887b5f805d148842ce5484ae6b8f60b95b4dd4d" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-12T08:03:26.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/b887b5f805d148842ce5484ae6b8f60b95b4dd4d" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="33" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="removed utilitiesPkg submodule" />
-          <InformationField name="CommitId" value="0c74c44f417cdfa1cbfb41ebebda0e75806ed7bd" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-12T08:03:23.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0c74c44f417cdfa1cbfb41ebebda0e75806ed7bd" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="34" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Рефакторинг smoke-тестов CRM (скорость проверки элементов страницы увеличена)" />
-          <InformationField name="CommitId" value="78857d6c8267dac8405b1532f41cfc352ffb29c7" />
-          <InformationField name="Author" value="Alexandr Rogov" />
-          <InformationField name="Timestamp" value="2016-05-12T06:44:14.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/78857d6c8267dac8405b1532f41cfc352ffb29c7" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="35" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA" />
-          <InformationField name="CommitId" value="0dc2d47047adca56fe74d0803f931ca5c2c41bd6" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-11T13:44:52.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0dc2d47047adca56fe74d0803f931ca5c2c41bd6" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="36" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Доработана проверка множемтвенного запуска" />
-          <InformationField name="CommitId" value="7ab1bbeccaffb25f5a9137fdce4701a05c37782f" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-11T13:42:50.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/7ab1bbeccaffb25f5a9137fdce4701a05c37782f" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="37" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
-          <InformationField name="CommitId" value="0209b840ad4c62470f63748712888afe8d03c7d6" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-11T11:19:16.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0209b840ad4c62470f63748712888afe8d03c7d6" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="38" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="bundle changed and cards controller modified" />
-          <InformationField name="CommitId" value="81e9bc8f956b70471884bca889819985533dfabc" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-11T11:17:11.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/81e9bc8f956b70471884bca889819985533dfabc" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="39" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Новый проект для приложения аудита. Замена старому проекту" />
-          <InformationField name="CommitId" value="3743757afbc09c669b699603a789517476a78dcb" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-11T07:51:25.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/3743757afbc09c669b699603a789517476a78dcb" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="40" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA" />
-          <InformationField name="CommitId" value="76b38ba09a651e2e429286f5c8d508ffc7b5a00e" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-11T05:37:29.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/76b38ba09a651e2e429286f5c8d508ffc7b5a00e" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="41" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Добавлено копирование заявки" />
-          <InformationField name="CommitId" value="c7e8dbe87dc57971a73ef8882160e69234fafead" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-11T05:37:18.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c7e8dbe87dc57971a73ef8882160e69234fafead" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="42" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Добавлены карты, тарифы и правила выбора карт" />
-          <InformationField name="CommitId" value="1edad4288401f461f5139d9972b5d9cd7c5862fd" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-06T09:32:42.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/1edad4288401f461f5139d9972b5d9cd7c5862fd" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="43" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
-          <InformationField name="CommitId" value="5244d29a0ae609275e5c74ca6634ac934a237ba3" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-04T15:05:12.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/5244d29a0ae609275e5c74ca6634ac934a237ba3" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="44" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Added Cards support data models" />
-          <InformationField name="CommitId" value="f88cd1b9dd1a5bfc1a4c666f8335e3f936ca9567" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-04T15:04:16.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/f88cd1b9dd1a5bfc1a4c666f8335e3f936ca9567" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="45" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA" />
-          <InformationField name="CommitId" value="a37fcd72854718420672c4fb6ce482f5c898cc19" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-04T13:24:00.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a37fcd72854718420672c4fb6ce482f5c898cc19" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="46" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Добален проект DBProvider" />
-          <InformationField name="CommitId" value="e71e4189fed61255d1040ce97cc483844cbe8c41" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-05-04T13:23:15.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e71e4189fed61255d1040ce97cc483844cbe8c41" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="47" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="references changed" />
-          <InformationField name="CommitId" value="1f3deb6fff8be1d73af0c41b9b213152746343a8" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-04T12:37:53.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/1f3deb6fff8be1d73af0c41b9b213152746343a8" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="48" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="cleanup bugs fixed" />
-          <InformationField name="CommitId" value="b4ca7fdcd97a734f4d2e1563d028f7123d67be36" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-04T12:36:16.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/b4ca7fdcd97a734f4d2e1563d028f7123d67be36" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="49" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Project cleanup" />
-          <InformationField name="CommitId" value="f78df19878a82aa17433b10af4a6cc0f88822ff7" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-05-04T11:50:26.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/f78df19878a82aa17433b10af4a6cc0f88822ff7" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="50" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Создал ветку с комплектом smoke-тестов для Service CRM" />
-          <InformationField name="CommitId" value="e3696c4bd3d572fd138d1f715c54af02009847ea" />
-          <InformationField name="Author" value="Alexandr Rogov" />
-          <InformationField name="Timestamp" value="2016-05-04T07:50:54.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e3696c4bd3d572fd138d1f715c54af02009847ea" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="51" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Добавлена информация о релизе" />
-          <InformationField name="CommitId" value="e915064049692d4b54d73e03b4d567fd33ff9c89" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-29T09:36:38.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e915064049692d4b54d73e03b4d567fd33ff9c89" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="52" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="GenParameters update reverted and delete added" />
-          <InformationField name="CommitId" value="a2bd3115e880b3de08f3e2568c6d1e58f8217a26" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-29T06:27:15.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a2bd3115e880b3de08f3e2568c6d1e58f8217a26" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="53" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="added xml model for clearing transaction file" />
-          <InformationField name="CommitId" value="3f23efc4ae87c3159a62007ab5adf91f04ccb875" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-25T09:57:14.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/3f23efc4ae87c3159a62007ab5adf91f04ccb875" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="54" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="minors fixes" />
-          <InformationField name="CommitId" value="87d885963ed9298fc746b1b74c6f99a596e9b602" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-28T15:04:51.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/87d885963ed9298fc746b1b74c6f99a596e9b602" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="55" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="minor updates" />
-          <InformationField name="CommitId" value="a0453d83f90622b6502d629a514186ddf8739529" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-27T13:53:03.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a0453d83f90622b6502d629a514186ddf8739529" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="56" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'cardServices'" />
-          <InformationField name="CommitId" value="62972b23674bda3b19e15bf54c52311c02eb223e" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-27T09:24:33.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/62972b23674bda3b19e15bf54c52311c02eb223e" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="57" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="cards services changeg" />
-          <InformationField name="CommitId" value="d79312dfd95ea5261bd8b1e8520e3e524654a83f" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-27T09:17:10.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/d79312dfd95ea5261bd8b1e8520e3e524654a83f" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="58" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="added xml model for clearing transaction file" />
-          <InformationField name="CommitId" value="027aa5547a1597aa86df90f5ab6cc8fcf72c714f" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-25T09:57:14.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/027aa5547a1597aa86df90f5ab6cc8fcf72c714f" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="59" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Добавлен проект SOZToolkit (версия генератора заявок для СОЗа)" />
-          <InformationField name="CommitId" value="c47a2df8048196853a3d3890b1cc90a22951026b" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-04-22T14:12:19.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c47a2df8048196853a3d3890b1cc90a22951026b" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="60" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="new test category for tfs build job" />
-          <InformationField name="CommitId" value="a098fc74eeac9074c5dbb71fc491acc892701893" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-21T11:40:24.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a098fc74eeac9074c5dbb71fc491acc892701893" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="61" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="AppConfig =&gt; rumskapt168" />
-          <InformationField name="CommitId" value="709b534ac189e600a108640c707f08b7f1baf7af" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-21T10:55:56.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/709b534ac189e600a108640c707f08b7f1baf7af" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="62" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="initial commit" />
-          <InformationField name="CommitId" value="e3330d047c6351c3eedf61909b65473cce7d412d" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-19T14:22:07.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e3330d047c6351c3eedf61909b65473cce7d412d" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="63" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="DynamicsAT initial import" />
-          <InformationField name="CommitId" value="505f5d2c73558bdecd3b6b2dfa195b14990d655b" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-18T11:10:48.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/505f5d2c73558bdecd3b6b2dfa195b14990d655b" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="64" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="MockDynamics imported" />
-          <InformationField name="CommitId" value="eef053832342d6565c80224b4761c315f55e00d5" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-13T11:48:15.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/eef053832342d6565c80224b4761c315f55e00d5" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="65" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="CloneUtility imported" />
-          <InformationField name="CommitId" value="ae382c187c09a32c35241b63ccbe8a1317c75f83" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-13T09:29:26.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/ae382c187c09a32c35241b63ccbe8a1317c75f83" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="66" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="AtReportWin imported. AuroraAT now is a nuget dep" />
-          <InformationField name="CommitId" value="016d179c2c7a4830f4e2eb59859d249bb443e544" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-13T08:12:39.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/016d179c2c7a4830f4e2eb59859d249bb443e544" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="67" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Removed Fody and its deps. Nuget package built" />
-          <InformationField name="CommitId" value="9ed3bb8236c52b2ec59af73751298d968f2960ef" />
-          <InformationField name="Author" value="Konstantin Neradovsky" />
-          <InformationField name="Timestamp" value="2016-04-13T07:53:01.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/9ed3bb8236c52b2ec59af73751298d968f2960ef" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="68" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="AuditApp imported" />
-          <InformationField name="CommitId" value="0c535dcdd4cef8054732d84f1b7a201cedc51d97" />
-          <InformationField name="Author" value="Нерадовский Константин Леонидович" />
-          <InformationField name="Timestamp" value="2016-04-12T14:55:09.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0c535dcdd4cef8054732d84f1b7a201cedc51d97" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="69" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA" />
-          <InformationField name="CommitId" value="2ffb6966c76b8a4654fdd372ec1bfbe455db17f4" />
-          <InformationField name="Author" value="Нерадовский Константин Леонидович" />
-          <InformationField name="Timestamp" value="2016-04-12T09:37:11.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/2ffb6966c76b8a4654fdd372ec1bfbe455db17f4" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="70" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="AuroraATEngine imported" />
-          <InformationField name="CommitId" value="fb65ac52631cc77bbc563fdd5a9716044842c785" />
-          <InformationField name="Author" value="Нерадовский Константин Леонидович" />
-          <InformationField name="Timestamp" value="2016-04-12T09:36:51.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/fb65ac52631cc77bbc563fdd5a9716044842c785" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="71" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="Добавлен выбор тарифа перед генерацией заявки" />
-          <InformationField name="CommitId" value="a8fbf887ecb3d0c13c753dafe5bbc7bb0012c8ac" />
-          <InformationField name="Author" value="eugene" />
-          <InformationField name="Timestamp" value="2016-04-12T08:30:29.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a8fbf887ecb3d0c13c753dafe5bbc7bb0012c8ac" />
-        </Fields>
-      </BuildInformationNode>
-      <BuildInformationNode NodeId="72" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-24T15:23:39.95Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
-        <Fields>
-          <InformationField name="Comment" value="AppDataGen imported from SVN" />
-          <InformationField name="CommitId" value="48b39aab4009da86ee349e2ff1116a7517e8c796" />
-          <InformationField name="Author" value="Нерадовский Константин Леонидович" />
-          <InformationField name="Timestamp" value="2016-04-11T13:17:16.0000000Z" />
-          <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/48b39aab4009da86ee349e2ff1116a7517e8c796" />
-        </Fields>
-      </BuildInformationNode>
-    </Information>
-    <ContainerId xsi:nil="true" />
-  </Build>
-  <Controller Uri="vstfs:///Build/Controller/4" name="PoolAutoTest068" MaxConcurrentBuilds="0" QueueCount="0" Enabled="false" DateCreated="0001-01-01T00:00:00" DateUpdated="0001-01-01T00:00:00">
-    <Properties />
-    <Tags />
-  </Controller>
-  <Definition BatchSize="0" BuildControllerUri="vstfs:///Build/Controller/4" ContinuousIntegrationQuietPeriod="0" QueueStatus="Enabled" FullPath="\Открытие\Automation UI Tests" Uri="vstfs:///Build/Definition/18" DateCreated="2016-05-24T15:15:46.943Z">
-    <RetentionPolicies />
-    <Schedules />
-    <SourceProviders />
-    <Properties />
-  </Definition>
-  <Requests>
-    <QueuedBuild BatchId="00000000-0000-0000-0000-000000000000" BuildControllerUri="vstfs:///Build/Controller/4" BuildDefinitionUri="vstfs:///Build/Definition/18" CustomGetVersion="LG:refs/heads/tfs_reporting:f70726e433e97cdd6f0b1d3bb5efc88196b6673f" GetOption="LatestOnQueue" id="1993" QueuePosition="0" QueueTime="2016-05-24T15:22:41.5768107Z" RequestedBy="OPEN.RU\afanasev_sn" RequestedByDisplayName="Афанасьев Сергей Николаевич" RequestedFor="OPEN.RU\afanasev_sn" RequestedForDisplayName="Афанасьев Сергей Николаевич" Status="Completed" TeamProject="Открытие">
-      <BuildUris>
-        <string>vstfs:///Build/Build/1993</string>
-      </BuildUris>
-      <ProcessParameters>{&quot;BuildConfiguration&quot;:&quot;debug&quot;,&quot;BuildPlatform&quot;:&quot;any cpu&quot;}</ProcessParameters>
-    </QueuedBuild>
-  </Requests>
-  <Subscriber>Афанасьев Сергей Николаевич</Subscriber>
-  <TeamProjectCollectionUrl>http://rumskapt144:8080/tfs/DefaultCollection/</TeamProjectCollectionUrl>
-  <TimeZone>Russia TZ 2 Standard Time</TimeZone>
-  <TimeZoneOffset>&#43;03:00:00</TimeZoneOffset>
-  <title>Открытие Build 20160524.2 partially succeeded</title>
-  <Uri>vstfs:///Build/Build/1993?url=http%3a%2f%2frumskapt144%3a8080%2ftfs%2fDefaultCollection%2f</Uri>
-  <WebAccessUri>http://rumskapt144:8080/tfs/web/build.aspx?pcguid=390a113f-cc8f-4694-950f-23cbc67f0b0d&amp;builduri=vstfs:%2f%2f%2fBuild%2fBuild%2f1993</WebAccessUri>
-  <Duration>57</Duration>
-  <FinishTimeLocal>2016-05-24T18:23:39.8751318</FinishTimeLocal>
-  <StartTimeLocal>2016-05-24T18:22:42.3568257</StartTimeLocal><SubscriptionId xmlns="">1199</SubscriptionId><SubscriptionUrl xmlns="">http://rumskapt144:8080/tfs/DefaultCollection/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5/_admin/_Alerts#id=1199&amp;showteams=1</SubscriptionUrl></BuildCompletedEvent>
+                <InformationField name="CommitId" value="c6f01f6b694f1473e79b6be613fe18fe3e4c0253" />
+                <InformationField name="Author" value="Alexandr Rogov" />
+                <InformationField name="Timestamp" value="2016-05-16T07:44:47.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c6f01f6b694f1473e79b6be613fe18fe3e4c0253" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="47" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Изменение тестовых контуров. Доработки дополнительных проверок." />
+                <InformationField name="CommitId" value="9fccdb557cee244ddc558ba3829403504ed352d2" />
+                <InformationField name="Author" value="Alexandr Rogov" />
+                <InformationField name="Timestamp" value="2016-05-16T07:03:15.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/9fccdb557cee244ddc558ba3829403504ed352d2" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="48" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="submodule removed" />
+                <InformationField name="CommitId" value="68d7a306edad5b84553ee9ca6164601cdfe020db" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-13T13:21:31.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/68d7a306edad5b84553ee9ca6164601cdfe020db" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="49" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="added submodule for unit testing" />
+                <InformationField name="CommitId" value="e2220e82f4f5df3a8b13ff321601bf07b4b69e09" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-13T11:57:44.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e2220e82f4f5df3a8b13ff321601bf07b4b69e09" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="50" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Extended logging via nlog was added. Code was refactored." />
+                <InformationField name="CommitId" value="645c41af565dcae813c36241da0f216a93a8e2ab" />
+                <InformationField name="Author" value="Stanislav Vlasko" />
+                <InformationField name="Timestamp" value="2016-05-13T11:00:10.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/645c41af565dcae813c36241da0f216a93a8e2ab" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="51" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="utulities package solution added" />
+                <InformationField name="CommitId" value="0027ae73636dc4012630434ce08c875bdb4c9bae" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-12T08:05:33.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0027ae73636dc4012630434ce08c875bdb4c9bae" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="52" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
+                <InformationField name="CommitId" value="b887b5f805d148842ce5484ae6b8f60b95b4dd4d" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-12T08:03:26.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/b887b5f805d148842ce5484ae6b8f60b95b4dd4d" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="53" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="removed utilitiesPkg submodule" />
+                <InformationField name="CommitId" value="0c74c44f417cdfa1cbfb41ebebda0e75806ed7bd" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-12T08:03:23.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0c74c44f417cdfa1cbfb41ebebda0e75806ed7bd" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="54" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Рефакторинг smoke-тестов CRM (скорость проверки элементов страницы увеличена)" />
+                <InformationField name="CommitId" value="78857d6c8267dac8405b1532f41cfc352ffb29c7" />
+                <InformationField name="Author" value="Alexandr Rogov" />
+                <InformationField name="Timestamp" value="2016-05-12T06:44:14.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/78857d6c8267dac8405b1532f41cfc352ffb29c7" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="55" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA" />
+                <InformationField name="CommitId" value="0dc2d47047adca56fe74d0803f931ca5c2c41bd6" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-11T13:44:52.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0dc2d47047adca56fe74d0803f931ca5c2c41bd6" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="56" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Доработана проверка множемтвенного запуска" />
+                <InformationField name="CommitId" value="7ab1bbeccaffb25f5a9137fdce4701a05c37782f" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-11T13:42:50.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/7ab1bbeccaffb25f5a9137fdce4701a05c37782f" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="57" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
+                <InformationField name="CommitId" value="0209b840ad4c62470f63748712888afe8d03c7d6" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-11T11:19:16.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0209b840ad4c62470f63748712888afe8d03c7d6" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="58" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="bundle changed and cards controller modified" />
+                <InformationField name="CommitId" value="81e9bc8f956b70471884bca889819985533dfabc" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-11T11:17:11.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/81e9bc8f956b70471884bca889819985533dfabc" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="59" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Новый проект для приложения аудита. Замена старому проекту" />
+                <InformationField name="CommitId" value="3743757afbc09c669b699603a789517476a78dcb" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-11T07:51:25.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/3743757afbc09c669b699603a789517476a78dcb" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="60" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA" />
+                <InformationField name="CommitId" value="76b38ba09a651e2e429286f5c8d508ffc7b5a00e" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-11T05:37:29.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/76b38ba09a651e2e429286f5c8d508ffc7b5a00e" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="61" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлено копирование заявки" />
+                <InformationField name="CommitId" value="c7e8dbe87dc57971a73ef8882160e69234fafead" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-11T05:37:18.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c7e8dbe87dc57971a73ef8882160e69234fafead" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="62" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлены карты, тарифы и правила выбора карт" />
+                <InformationField name="CommitId" value="1edad4288401f461f5139d9972b5d9cd7c5862fd" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-06T09:32:42.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/1edad4288401f461f5139d9972b5d9cd7c5862fd" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="63" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA.git" />
+                <InformationField name="CommitId" value="5244d29a0ae609275e5c74ca6634ac934a237ba3" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-04T15:05:12.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/5244d29a0ae609275e5c74ca6634ac934a237ba3" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="64" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Added Cards support data models" />
+                <InformationField name="CommitId" value="f88cd1b9dd1a5bfc1a4c666f8335e3f936ca9567" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-04T15:04:16.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/f88cd1b9dd1a5bfc1a4c666f8335e3f936ca9567" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="65" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA" />
+                <InformationField name="CommitId" value="a37fcd72854718420672c4fb6ce482f5c898cc19" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-04T13:24:00.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a37fcd72854718420672c4fb6ce482f5c898cc19" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="66" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добален проект DBProvider" />
+                <InformationField name="CommitId" value="e71e4189fed61255d1040ce97cc483844cbe8c41" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-05-04T13:23:15.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e71e4189fed61255d1040ce97cc483844cbe8c41" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="67" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="references changed" />
+                <InformationField name="CommitId" value="1f3deb6fff8be1d73af0c41b9b213152746343a8" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-04T12:37:53.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/1f3deb6fff8be1d73af0c41b9b213152746343a8" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="68" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="cleanup bugs fixed" />
+                <InformationField name="CommitId" value="b4ca7fdcd97a734f4d2e1563d028f7123d67be36" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-04T12:36:16.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/b4ca7fdcd97a734f4d2e1563d028f7123d67be36" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="69" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Project cleanup" />
+                <InformationField name="CommitId" value="f78df19878a82aa17433b10af4a6cc0f88822ff7" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-05-04T11:50:26.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/f78df19878a82aa17433b10af4a6cc0f88822ff7" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="70" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Создал ветку с комплектом smoke-тестов для Service CRM" />
+                <InformationField name="CommitId" value="e3696c4bd3d572fd138d1f715c54af02009847ea" />
+                <InformationField name="Author" value="Alexandr Rogov" />
+                <InformationField name="Timestamp" value="2016-05-04T07:50:54.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e3696c4bd3d572fd138d1f715c54af02009847ea" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="71" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлена информация о релизе" />
+                <InformationField name="CommitId" value="e915064049692d4b54d73e03b4d567fd33ff9c89" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-29T09:36:38.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e915064049692d4b54d73e03b4d567fd33ff9c89" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="72" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="GenParameters update reverted and delete added" />
+                <InformationField name="CommitId" value="a2bd3115e880b3de08f3e2568c6d1e58f8217a26" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-29T06:27:15.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a2bd3115e880b3de08f3e2568c6d1e58f8217a26" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="73" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="added xml model for clearing transaction file" />
+                <InformationField name="CommitId" value="3f23efc4ae87c3159a62007ab5adf91f04ccb875" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-25T09:57:14.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/3f23efc4ae87c3159a62007ab5adf91f04ccb875" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="74" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="minors fixes" />
+                <InformationField name="CommitId" value="87d885963ed9298fc746b1b74c6f99a596e9b602" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-28T15:04:51.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/87d885963ed9298fc746b1b74c6f99a596e9b602" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="75" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="minor updates" />
+                <InformationField name="CommitId" value="a0453d83f90622b6502d629a514186ddf8739529" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-27T13:53:03.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a0453d83f90622b6502d629a514186ddf8739529" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="76" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'cardServices'" />
+                <InformationField name="CommitId" value="62972b23674bda3b19e15bf54c52311c02eb223e" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-27T09:24:33.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/62972b23674bda3b19e15bf54c52311c02eb223e" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="77" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="cards services changeg" />
+                <InformationField name="CommitId" value="d79312dfd95ea5261bd8b1e8520e3e524654a83f" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-27T09:17:10.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/d79312dfd95ea5261bd8b1e8520e3e524654a83f" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="78" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="added xml model for clearing transaction file" />
+                <InformationField name="CommitId" value="027aa5547a1597aa86df90f5ab6cc8fcf72c714f" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-25T09:57:14.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/027aa5547a1597aa86df90f5ab6cc8fcf72c714f" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="79" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлен проект SOZToolkit (версия генератора заявок для СОЗа)" />
+                <InformationField name="CommitId" value="c47a2df8048196853a3d3890b1cc90a22951026b" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-04-22T14:12:19.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/c47a2df8048196853a3d3890b1cc90a22951026b" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="80" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="new test category for tfs build job" />
+                <InformationField name="CommitId" value="a098fc74eeac9074c5dbb71fc491acc892701893" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-21T11:40:24.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a098fc74eeac9074c5dbb71fc491acc892701893" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="81" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="AppConfig =&gt; rumskapt168" />
+                <InformationField name="CommitId" value="709b534ac189e600a108640c707f08b7f1baf7af" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-21T10:55:56.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/709b534ac189e600a108640c707f08b7f1baf7af" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="82" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="initial commit" />
+                <InformationField name="CommitId" value="e3330d047c6351c3eedf61909b65473cce7d412d" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-19T14:22:07.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/e3330d047c6351c3eedf61909b65473cce7d412d" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="83" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="DynamicsAT initial import" />
+                <InformationField name="CommitId" value="505f5d2c73558bdecd3b6b2dfa195b14990d655b" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-18T11:10:48.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/505f5d2c73558bdecd3b6b2dfa195b14990d655b" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="84" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="MockDynamics imported" />
+                <InformationField name="CommitId" value="eef053832342d6565c80224b4761c315f55e00d5" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-13T11:48:15.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/eef053832342d6565c80224b4761c315f55e00d5" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="85" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="CloneUtility imported" />
+                <InformationField name="CommitId" value="ae382c187c09a32c35241b63ccbe8a1317c75f83" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-13T09:29:26.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/ae382c187c09a32c35241b63ccbe8a1317c75f83" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="86" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="AtReportWin imported. AuroraAT now is a nuget dep" />
+                <InformationField name="CommitId" value="016d179c2c7a4830f4e2eb59859d249bb443e544" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-13T08:12:39.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/016d179c2c7a4830f4e2eb59859d249bb443e544" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="87" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Removed Fody and its deps. Nuget package built" />
+                <InformationField name="CommitId" value="9ed3bb8236c52b2ec59af73751298d968f2960ef" />
+                <InformationField name="Author" value="Konstantin Neradovsky" />
+                <InformationField name="Timestamp" value="2016-04-13T07:53:01.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/9ed3bb8236c52b2ec59af73751298d968f2960ef" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="88" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="AuditApp imported" />
+                <InformationField name="CommitId" value="0c535dcdd4cef8054732d84f1b7a201cedc51d97" />
+                <InformationField name="Author" value="Нерадовский Константин Леонидович" />
+                <InformationField name="Timestamp" value="2016-04-12T14:55:09.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/0c535dcdd4cef8054732d84f1b7a201cedc51d97" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="89" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Merge branch 'master' of https://git.open.ru/Bonobo.Git.Server/AutomationQA" />
+                <InformationField name="CommitId" value="2ffb6966c76b8a4654fdd372ec1bfbe455db17f4" />
+                <InformationField name="Author" value="Нерадовский Константин Леонидович" />
+                <InformationField name="Timestamp" value="2016-04-12T09:37:11.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/2ffb6966c76b8a4654fdd372ec1bfbe455db17f4" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="90" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="AuroraATEngine imported" />
+                <InformationField name="CommitId" value="fb65ac52631cc77bbc563fdd5a9716044842c785" />
+                <InformationField name="Author" value="Нерадовский Константин Леонидович" />
+                <InformationField name="Timestamp" value="2016-04-12T09:36:51.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/fb65ac52631cc77bbc563fdd5a9716044842c785" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="91" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="Добавлен выбор тарифа перед генерацией заявки" />
+                <InformationField name="CommitId" value="a8fbf887ecb3d0c13c753dafe5bbc7bb0012c8ac" />
+                <InformationField name="Author" value="eugene" />
+                <InformationField name="Timestamp" value="2016-04-12T08:30:29.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/a8fbf887ecb3d0c13c753dafe5bbc7bb0012c8ac" />
+              </Fields>
+            </BuildInformationNode>
+            <BuildInformationNode NodeId="92" ParentId="1" type="AssociatedCommit" LastModifiedDate="2016-05-26T13:48:45.487Z" LastModifiedBy="vstfs:///Framework/IdentityDomain/390a113f-cc8f-4694-950f-23cbc67f0b0d\Project Collection Service Accounts">
+              <Fields>
+                <InformationField name="Comment" value="AppDataGen imported from SVN" />
+                <InformationField name="CommitId" value="48b39aab4009da86ee349e2ff1116a7517e8c796" />
+                <InformationField name="Author" value="Нерадовский Константин Леонидович" />
+                <InformationField name="Timestamp" value="2016-04-11T13:17:16.0000000Z" />
+                <InformationField name="Uri" value="http://rumskapt144:8080/tfs/DefaultCollection/_apis/git/repositories/35adab6f-aa6a-45af-9b08-392a7ff98dcc/commits/48b39aab4009da86ee349e2ff1116a7517e8c796" />
+              </Fields>
+            </BuildInformationNode>
+          </Information>
+          <ContainerId xsi:nil="true" />
+        </Build>
+        <Controller Uri="vstfs:///Build/Controller/4" name="PoolAutoTest068" MaxConcurrentBuilds="0" QueueCount="0" Enabled="false" DateCreated="0001-01-01T00:00:00" DateUpdated="0001-01-01T00:00:00">
+          <Properties />
+          <Tags />
+        </Controller>
+        <Definition BatchSize="0" BuildControllerUri="vstfs:///Build/Controller/4" ContinuousIntegrationQuietPeriod="0" QueueStatus="Enabled" FullPath="\Открытие\Automation UI Tests" Uri="vstfs:///Build/Definition/18" DateCreated="2016-05-26T13:43:45.71Z">
+          <RetentionPolicies />
+          <Schedules />
+          <SourceProviders />
+          <Properties />
+        </Definition>
+        <Requests>
+          <QueuedBuild BatchId="00000000-0000-0000-0000-000000000000" BuildControllerUri="vstfs:///Build/Controller/4" BuildDefinitionUri="vstfs:///Build/Definition/18" CustomGetVersion="LG:refs/heads/tfs_reporting:15083adc5a20181afa76caac8504dd39beec3036" GetOption="LatestOnQueue" id="2157" QueuePosition="0" QueueTime="2016-05-26T13:46:59.5126636Z" RequestedBy="OPEN.RU\neradovskiy_kl" RequestedByDisplayName="Нерадовский Константин Леонидович" RequestedFor="OPEN.RU\neradovskiy_kl" RequestedForDisplayName="Нерадовский Константин Леонидович" Status="Completed" TeamProject="Открытие">
+            <BuildUris>
+              <string>vstfs:///Build/Build/2157</string>
+            </BuildUris>
+            <ProcessParameters>{&quot;BuildConfiguration&quot;:&quot;debug&quot;,&quot;BuildPlatform&quot;:&quot;any cpu&quot;}</ProcessParameters>
+          </QueuedBuild>
+        </Requests>
+        <Subscriber>Закомолдина Анна Владимировна</Subscriber>
+        <TeamProjectCollectionUrl>http://rumskapt144:8080/tfs/DefaultCollection/</TeamProjectCollectionUrl>
+        <TimeZone>Russia TZ 2 Standard Time</TimeZone>
+        <TimeZoneOffset>&#43;03:00:00</TimeZoneOffset>
+        <title>Открытие Build 20160526.4 partially succeeded</title>
+        <Uri>vstfs:///Build/Build/2157?url=http%3a%2f%2frumskapt144%3a8080%2ftfs%2fDefaultCollection%2f</Uri>
+        <WebAccessUri>http://rumskapt144:8080/tfs/web/build.aspx?pcguid=390a113f-cc8f-4694-950f-23cbc67f0b0d&amp;builduri=vstfs:%2f%2f%2fBuild%2fBuild%2f2157</WebAccessUri>
+        <Duration>105</Duration>
+        <FinishTimeLocal>2016-05-26T16:48:45.4543009</FinishTimeLocal>
+        <StartTimeLocal>2016-05-26T16:47:00.2146771</StartTimeLocal><SubscriptionId xmlns="">1200</SubscriptionId><SubscriptionUrl xmlns="">http://rumskapt144:8080/tfs/DefaultCollection/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5/_admin/_Alerts#id=1200&amp;showteams=1</SubscriptionUrl>
+</BuildCompletedEvent>
